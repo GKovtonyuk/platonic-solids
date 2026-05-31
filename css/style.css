@@ -1,0 +1,4 @@
+body{margin:0;background:#111;color:#fff;font-family:Arial}
+#ui{position:absolute;top:10px;left:10px;width:300px;padding:15px;background:rgba(0,0,0,.8);border-radius:10px}
+button{display:block;width:100%;margin:5px 0;padding:10px}
+@media(max-width:768px){#ui{width:calc(100% - 20px)}}
