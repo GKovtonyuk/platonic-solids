@@ -1,0 +1,116 @@
+/* Основні налаштування сторінки */
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  color: white;
+}
+
+/* Контейнер для 3D сцени */
+#canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+/* UI Панель керування */
+#ui {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 280px;
+  padding: 16px;
+  background: rgba(20, 20, 20, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  color: white;
+}
+
+.title { 
+  font-size: 20px; 
+  font-weight: bold; 
+  margin-bottom: 5px; 
+}
+
+.subtitle { 
+  font-size: 12px; 
+  opacity: 0.7; 
+  margin-bottom: 12px; 
+}
+
+/* Контейнер кнопок */
+#buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+button {
+  padding: 10px;
+  background: #222;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+button:hover { 
+  background: #333; 
+  transform: scale(1.02); 
+}
+
+button.active { 
+  background: #4f46e5; 
+  border-color: #6366f1; 
+}
+
+/* Спеціальний стиль для кнопки меню */
+#menuToggle {
+  background: #333;
+  border-color: #555;
+  font-weight: bold;
+}
+
+#menuToggle:hover {
+  background: #444;
+}
+
+/* Клас для приховування елементів */
+.hidden { 
+  display: none !important; 
+}
+
+/* Опис фігури */
+#description {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  font-size: 13px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Адаптація для смартфонів */
+@media (max-width: 600px) {
+  #ui { 
+    width: 90%; 
+    left: 5%; 
+    top: 10px; 
+  }
+  
+  button { 
+    padding: 14px; 
+    font-size: 16px; 
+  }
+  
+  .title { font-size: 18px; }
+  .subtitle { display: none; } /* Ховаємо підзаголовок для економії місця */
+}
