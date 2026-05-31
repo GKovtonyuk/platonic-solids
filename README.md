@@ -1,20 +1,20 @@
-# 🧊 Platonic Solids 3D
+#  Platonic Solids 3D
 
 Інтерактивна 3D-візуалізація платонових тіл.
 
-## 🚀 Функції
+##  Функції
 - 5 платонових тіл
 - 3D обертання
 - освітні описи
 - OrbitControls
 
-## 🧠 Технології
+##  Технології
 - HTML
 - CSS
 - JavaScript
 - Three.js
 
-## 📦 Структура
+## Структура
 - index.html
 - css/style.css
 - js/app.js
