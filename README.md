@@ -22,4 +22,4 @@ Platonic Solids Lab
 - js/app.js
 
 ## 🌐 GitHub Pages
-https://your-username.github.io/platonic-solids-3d/
+https://gkovtonyuk.github.io/platonic-solids/
